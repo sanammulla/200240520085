@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM validation</title>
+    <script src="2.js"></script>
+    <style>
+        html,body{
+            margin: 0%;
+        }
+        .back{
+            background: wheat;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="back"> 
+        <div style="height: 100vh; display: flex; justify-content: center;
+            align-items: center;flex-direction: column; font-size: 35px;">
+        <form style="border: 2px solid red; padding: 25px;">
+            <div style="font-size: 50px;display: flex; justify-content: center;align-items: center;">Log in</div>
+            <br>
+            <label>Username :</label>
+            <input type="text" id="username" placeholder="UserName" style="font-size: 32px;" required>
+
+            <br><br>
+
+            <label>Username :</label>
+            <input type="password" id="password" placeholder="password" style="font-size: 32px;" required>
+
+            <br><br>
+
+            <input type="submit" id="Submit" onclick="submitdata()" style="margin-left: 200px;font-size: 32px;">
+            <div id="Box">
+                
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
